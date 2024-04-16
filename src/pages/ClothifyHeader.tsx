@@ -4,8 +4,7 @@ export default function ClothifyHeader(){
     
     return(
         <div>
-            <img src={clothifyPicture} width={500} height={200} alt="Clothify Store" />
-                      
+            <img src={clothifyPicture} width={500} height={200} alt="Clothify Store" />                      
         </div>
     );
 }
