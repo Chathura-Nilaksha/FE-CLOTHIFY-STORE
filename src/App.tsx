@@ -1,25 +1,41 @@
+
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
+import ClothifyHeader from './pages/ClothifyHeader';
+import ContactUs from './pages/ContactUs';
+import Landing from './pages/Landing';
+import Login from './pages/Login';
+import Register from './pages/Register';
+
+import { } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <div>hi</div>
+
+    <div>   
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ClothifyHeader />} />
+            <Route index element={<Landing />} />
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            {/* <Route path="*" element={<NoPage />} /> */}
+          {/* </Route> */}
+        </Routes>
+      </BrowserRouter>
+    </div>
 
 
 
 
-
-
-
-
-
-
-
-    
     // <>
     //   {/* <div>
     //     <a href="https://vitejs.dev" target="_blank">
@@ -39,7 +55,7 @@ function App() {
     //     </p>
     //   </div>      
     // </>
-  )
+  );
 }
 
-export default App
+export default App;
