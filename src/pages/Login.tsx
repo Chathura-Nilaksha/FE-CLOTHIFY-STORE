@@ -13,19 +13,17 @@ export default function Login() {
                 </div>
             </div>
 
-
             <div className="container">
                 <div className="raw text-center text-capitalize">
                     <HeaderCompo />
                 </div>
             </div>
+
             <div className="container">
                 <div className="raw">
-                    <h4> Welcome to Clothify! Please log.</h4>
+                    <h4 className="text-center"> Welcome to Clothify Store! Please Log in.</h4>
                     <main className="form-signin w-100 m-auto">
                         <form>
-
-                            <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
                             <div className="form-floating">
                                 <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
@@ -36,10 +34,12 @@ export default function Login() {
                                 <label htmlFor="floatingPassword">Password</label>
                             </div>
 
-                            <button className="btn btn-primary w-100 py-2" type="submit" > Sign in </button>
+                            <button className="btn btn-primary w-100 py-2 m-1 mb-3" type="submit" > Log in </button>
 
                         </form>
                     </main>
+                    <p className="top-mg-5">If you do not have account, First Sigh Up for Free here &nbsp; <button className="btn btn-primary w-8 py-1" type="submit" > Sign Up </button>
+                    &nbsp; & then Log in</p>
                 </div>
             </div>
         </div>

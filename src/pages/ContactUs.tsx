@@ -63,14 +63,6 @@ export default function ContactUs() {
             </div>
 
 
-
-            <div className="conrainer">
-                <div className="raw text-center">
-                    Contact us page
-                </div>
-            </div>
-
-
         </div>
     );
 }
