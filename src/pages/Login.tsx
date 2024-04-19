@@ -38,7 +38,7 @@ export default function Login() {
 
                         </form>
                     </main>
-                    <p className="top-mg-5">If you do not have account, First Sigh Up for Free here &nbsp; <button className="btn btn-primary w-8 py-1" type="submit" > Sign Up </button>
+                    <p className="top-mg-5">If you do not have account, First Sign Up for Free here &nbsp; <button className="btn btn-primary w-8 py-1" type="submit" > Sign Up </button>
                     &nbsp; & then Log in</p>
                 </div>
             </div>
