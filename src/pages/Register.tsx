@@ -29,12 +29,28 @@ export default function Register() {
     const { register, handleSubmit, formState: { errors } } = useForm<IFormInput>()
     const submitForm: SubmitHandler<IFormInput> = (customerData) => {
         console.log(customerData);
-        axios.post('http://localhost:8081/customer/save-details', customerData);
+        axios.post('http://localhost:8081/customer/save-details', customerData)
+            .then((response) => {
+                console.log(response);
+                console.log("response came");
+                $("thank-you-message").prop("hidden", false);
+                //Above (May be a JQUERY)for-show the "thank-you-message" tag when reponse ok
+            });
+        // .catch((error) => {
+        //     if (error.response) {
+        //         console.log(error.response);
+        //         console.log("server responded");
+        //     } else if (error.request) {
+        //         console.log("network error");
+        //     } else {
+        //         console.log(error);
+        //     }
+        // });
     }
 
     return (
         <div>
-            <div className="conrainer">
+            <div className="container">
                 <div className="raw text-center" >
                     <ClothifyHeader />
                 </div>
@@ -47,12 +63,11 @@ export default function Register() {
             </div>
 
 
-
             <div className="container">
                 <div className="raw">
                     <body className="bg-body-tertiary">
 
-                        <form className="container">
+                        <form className="container" method="post">
                             <main>
                                 <div className="py-5 text-center">
                                     <h2><strong>User Registeration Form</strong></h2>
@@ -233,7 +248,17 @@ export default function Register() {
 
                                                 </div>
                                             </div>
-                                            <button onClick={handleSubmit(submitForm)} className="btn btn-primary btn-lg mb-5 mt-4 py-1" type="submit"> <small>Submit the Registration Form</small></button>
+                                            <button onClick={handleSubmit(submitForm)} id="submitDetailsbtn" className="btn btn-primary btn-lg mb-5 mt-4 py-1" type="submit"> <small>Submit the Registration Form</small></button>
+
+                                            <div id="thank-you-message" hidden>
+                                                Your details is being submitted. Thank you.
+                                            </div>
+
+                                            {/* example taken from net
+                                            <button popovertarget="my-popover">Open Popover</button>
+
+                                            <div popover id="my-popover">Greetings, one and all!</div> */}
+
                                         </form>
                                     </div>
                                 </div>
