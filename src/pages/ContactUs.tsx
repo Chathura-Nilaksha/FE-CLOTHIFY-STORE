@@ -30,7 +30,7 @@ export default function ContactUs() {
                                     <strong className="text-gray-dark">Address</strong>
                                     <a href="#">Location in the Google Map</a>
                                 </div>
-                                <span className="d-block">Clothify Store (PVT) Ltd, No.123, Galle Road, Panadura.</span>
+                                <span className="d-block">Kids FUN Toys Store (PVT) Ltd, No.100, Walana, Panadura.</span>
                             </div>
                         </div>
                         <div className="d-flex text-body-secondary pt-3">
@@ -38,7 +38,7 @@ export default function ContactUs() {
                             <div className="pb-3 mb-0 small lh-sm border-bottom w-100">
                                 <div className="d-flex justify-content-between">
                                     <strong className="text-gray-dark">Contact Number</strong>
-                                    <a href="#">Call on Whatsapp</a>
+                                    <span><a href="#">Whatsapp</a><span>&nbsp;( Same Number )</span></span>
                                 </div>
                                 <span className="d-block">+94 123 456 789</span>
                             </div>
@@ -47,10 +47,9 @@ export default function ContactUs() {
                             <svg className="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff" /><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
                             <div className="pb-3 mb-0 small lh-sm border-bottom w-100">
                                 <div className="d-flex justify-content-between">
-                                    <strong className="text-gray-dark">E-mail</strong>
-                                   
+                                    <strong className="text-gray-dark">E-mail</strong>                                   
                                 </div>
-                                <span className="d-block">clothify@sample.com</span>
+                                <span className="d-block">kidsfuntoys@gmail.com</span>
                             </div>
                         </div>
 
